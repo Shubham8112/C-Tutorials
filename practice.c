@@ -63,14 +63,34 @@
 // }
 // question:- to convert fahrenheit to celsius(in values/int)
 //  question:-to swap two integers numbers
-int main(){
-    int a,b,swap;
-    printf("enter number : ");
-    scanf("%d %d",&a,&b);
-    swap=a;
-    a=b;
-    b=swap;
-    printf("a= %d\n",a);
-    printf("b= %d",b);
-    return 0;
-}
+// int main(){
+//     int a,b,swap;
+//     printf("enter number : ");
+//     scanf("%d %d",&a,&b);
+//     swap=a;
+//     a=b;
+//     b=swap;
+//     printf("a= %d\n",a);
+//     printf("b= %d",b);
+//     return 0;
+// }
+//  Question Title: Rock, Paper, Scissors Game
+
+// Your task is to create a simple rock, paper, scissors game in C language using if-else statements.
+
+// Requirements:
+
+// Your program should prompt the user to enter their choice (0 for rock, 1 for paper, 2 for scissors).
+// The computer's choice should be randomly generated.
+// Display the result of the game: whether the user wins, loses, or if it's a tie.
+
+// Example Output:
+
+// Enter your choice (0 for rock, 1 for paper, 2 for scissors): 1
+// Computer chose: Rock
+// You win!
+
+// Note:
+
+// You are allowed to use if-else or conditional statements and the standard input/output functions provided by the C language.
+// Avoid using any advanced concepts or external libraries.
