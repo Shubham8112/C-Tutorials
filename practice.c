@@ -1,4 +1,4 @@
-#include <stdio.h>
+// #include <stdio.h>
 // int main(){
 //     printf("the first 10 natural number : \n");
 //     for(int i=0;i<=10;i++){
@@ -94,3 +94,107 @@
 
 // You are allowed to use if-else or conditional statements and the standard input/output functions provided by the C language.
 // Avoid using any advanced concepts or external libraries.
+// #include <stdio.h>
+
+// int main() {
+//     int n = 4;
+//     int i = 1;
+//     int num = 1;
+
+//     while (i <= n) {
+//         int j = 1;
+//         while (j <= i) {
+//             printf("%d", num);
+//             num++;
+//             j++;
+//         }
+//         printf("/n");
+//         num = num - i + 1;
+//         i++;
+//     }
+
+//     return 0;
+
+
+// }
+// #include <stdio.h>
+// int main(){
+//     float m1,n1;
+//     float m2,n2;
+//     scanf("%f%f",m1,n1);
+//     scanf("%f%f",m2,n2);
+//     float totalm1,totalm2;
+//     totalm1=m1+n1/2;
+//     totalm2=m2+n2/2;
+//     printf("Crop 1: %.2f",totalm1);
+//     printf("Crop 2: %.2f",totalm2);
+//     (totalm1>totalm2) ? printf("Crop 1 had the highest average yield"):printf("Crop 2: had the highest average yield ");
+//     return 0;
+// }
+#include <stdio.h>
+// int main(){
+//     int a,b,c,d,e;
+//     scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+//     int total;
+//     float p;
+//     total=a+b+c+d+e;
+//     printf("Total: %d\n",total);
+//     p=total*100/500;
+//     printf("percentage: %.2f",p);
+//     return 0;
+// }
+// int main(){
+//     int n,last_digit,f,sum;
+//     scanf("%d",&n);
+//     last_digit=n%10;
+//     for(f=n;f>=10;f/=10){
+
+//     }
+//     sum=last_digit+f;
+//     printf("sum = %d",sum);
+
+// }
+// int main(){
+//     int a = 200;
+//     if ( a < 20) {
+//         printf("a is less than 20\n");
+//     }
+//     else {
+//         printf("a is not less than 20\n");
+
+//     }
+//     printf("the value of a : %d",a);
+// }
+// int main(){
+//     int a,b;
+//     scanf("%d%d",&a,&b);
+//     if ( a < b) {
+//         printf("a is less than b\n");
+//     }
+//     if (a > b) {
+//         printf("a is not less than b\n");
+
+//     }
+//     printf("the value of a : %d\n",a);
+//     printf("the value of b : %d",b);
+// }
+// int main(){
+//     int count = 0, n = 100, sum = 0;
+//     do{
+//         sum += n;
+//         n /= 2;
+//         count++;
+//     }
+//     while (n >= 1);
+//     printf("%d",count);
+//     return 0;
+// }
+int main(){
+    int i;
+    scanf("%d",&i);
+    do{
+        printf("%d\n",i*2);
+        i++;
+    }while(i<=10);
+    return 0;
+}

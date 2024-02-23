@@ -68,20 +68,20 @@ return 0;
 //     printf("please enter correct mark");
 // return 0;
 // write a program to find if a character entered by user is upper case or not
-int main(){
-        char ch;
-        printf("enter character : ");
-        scanf("%c",&ch);
-        if (ch >= 'A' && ch<='Z'){
-                printf("upper case \n");
-       }else if(ch >= 'a' && ch <= 'z'){
-                printf("lower case \n");
-       }
-       else {
-            printf("not english character \n");
-       }
- return 0;      
-}
+// int main(){
+//         char ch;
+//         printf("enter character : ");
+//         scanf("%c",&ch);
+//         if (ch >= 'A' && ch<='Z'){
+//                 printf("upper case \n");
+//        }else if(ch >= 'a' && ch <= 'z'){
+//                 printf("lower case \n");
+//        }
+//        else {
+//             printf("not english character \n");
+//        }
+//  return 0;      
+// }
 // int main(){
 //         for(int i = 2; i<=20; i=i+2)
 //         printf("%d\n",i);
@@ -253,3 +253,16 @@ int main(){
 //      printf("%d",sum);
 //     return 0;
 // }
+#include<stdio.h>
+int main(){
+    int i;
+    scanf("%d",&i);
+    if(i%2==0){
+        printf("%d",i/2);
+    }
+    else if(i%2!=0){
+        printf("%d",3*i+1);
+ 
+    }
+    return 0;
+}
