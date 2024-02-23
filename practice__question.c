@@ -1,5 +1,5 @@
 #include<stdio.h>
-/*int main() {
+int main() {
     int age;
     printf("enter age : ");
     scanf("%d",&age);
@@ -15,7 +15,7 @@
     printf("child");
     }
 return 0 ;
-}*/
+}
 // ternary operator example
 int main(){
 int age;
