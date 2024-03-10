@@ -189,12 +189,86 @@
 //     printf("%d",count);
 //     return 0;
 // }
+// int main(){
+//     int i;
+//     scanf("%d",&i);
+//     do{
+//         printf("%d\n",i*2);
+//         i++;
+//     }while(i<=10);
+//     return 0;
+// }
+#include <stdio.h>
+// int main(){
+//     int a=10;
+//     while(a>5){
+//     int a=1;
+//     printf(a);
+//     a--;
+//     }   
+//     return 0
+// }
+// int main(){
+//     int n;
+//     printf("enter number : ");
+//     scanf("%d",&n);
+//     for(int i = 1; i <= n ; i++){
+//         {
+//             for(int k=1;k<i;k++){
+//                 printf(" ");
+//             }
+//         }
+//         for(int j = i ; j <= n ; j++){
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+// }
+// int main(){
+//     int n;
+//     printf("enter day(1-7): ");
+//     scanf("%d",&n);
+//     switch(n){
+//         case 1: printf("monday\n");
+//         break;
+//         case 2: printf("Tuesday\n");
+//         break;
+//         case 3:printf("wednesday");
+//         break;
+//         default: printf("not a correct number");
+//     }
+//     return 0;
+
+// }
+#include <stdio.h>
+// int main(){
+//     float w1,w2,evati,elum;
+//     scanf("%f %f",&w1,&w2);
+//     evati = w1/w2;
+//     elum = w2/w1;
+//     (evati > elum)? printf("the weight %.2f of evati\n",evati):(evati < elum) ? printf("the weight %.2f of evati\n",evati):printf("");
+//    if(evati > elum || evati < elum){
+//     printf("the weight %.2f of elum\n",elum);
+//     printf("not equal");
+//    }
+//     else if (evati == elum){
+//         printf("the weight %.2f of evati.\n",evati);
+//         printf("the weight %.2f of elum.\n",elum);
+//         printf("equal");
+//     }
+//     return 0;
+// }
 int main(){
-    int i;
-    scanf("%d",&i);
-    do{
-        printf("%d\n",i*2);
-        i++;
-    }while(i<=10);
-    return 0;
+    int n;
+    printf("enter number : ");
+    scanf("%d",&n);
+    int sum;
+    for (int i = 1 ; i < n ; i++){
+        sum += n % 10;
+        printf("%d",sum);
+        if (n<10){
+            break;
+        }
+    }
+
 }
