@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main() {
+int main(){
     int age;
     printf("enter age : ");
     scanf("%d",&age);

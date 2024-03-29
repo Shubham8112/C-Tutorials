@@ -13,3 +13,7 @@ int main(){
     }
     printf("Sum: %d",sum);
 }
+git init
+git add *
+git commit -m "some changes."
+git push origin main

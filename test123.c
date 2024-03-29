@@ -27,17 +27,17 @@
 // 30<= mark <70 is b
 // 70<= mark <90 is A
 // 90<= mark <100 is A
-int main(){
-    int mark;
-    printf("enter mark: ");
-    scanf("%d",&mark);
-    if (mark<30)
-    printf("c");
-    else if (30<=mark<70)
-    printf("B");
-    else if (70<=mark<90)
-    printf("A");
-    else(90<= mark <=100)
-    // printf("A+");
-return 0;
-}     
+// int main(){
+//     int mark;
+//     printf("enter mark: ");
+//     scanf("%d",&mark);
+//     if (mark<30)
+//     printf("c");
+//     else if (30<=mark<70)
+//     printf("B");
+//     else if (70<=mark<90)
+//     printf("A");
+//     else(90<= mark <=100)
+//     // printf("A+");
+// return 0;
+// }     

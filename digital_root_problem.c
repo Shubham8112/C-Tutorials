@@ -1,23 +1,23 @@
 // question :-calcute the digital root and also find the step 
 // example:- user input :-123 and the expected output :- 1+2+3=6
 #include <stdio.h>
-// int main(){
-//     int input;
-//     scanf("%d",&input);
-//     int dr = input;
-//     int step=0;
-//     while(dr>9){
-//         int sum=0;
-//         while(dr>0){
-//             sum+=dr%10;
-//             dr/=10;
-//         }
-//         dr=sum;
-//         step++;
-//     }
-//     printf("digital root: %d\n",dr);
-//     printf("no of steps: %d",step);
-//     return 0;
+int main(){
+    int input;
+    scanf("%d",&input);
+    int dr = input;
+    int step=0;
+    while(dr>9){
+        int sum=0;
+        while(dr>0){
+            sum+=dr%10;
+            dr/=10;
+        }
+        dr=sum;
+        step++;
+    }
+    printf("digital root: %d\n",dr);
+    printf("no of steps: %d",step);
+    return 0;
 // }
 // #include <stdio.h>
 // this question was come in my 1st CA

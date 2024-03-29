@@ -258,17 +258,17 @@
 //     }
 //     return 0;
 // }
-int main(){
-    int n;
-    printf("enter number : ");
-    scanf("%d",&n);
-    int sum;
-    for (int i = 1 ; i < n ; i++){
-        sum += n % 10;
-        printf("%d",sum);
-        if (n<10){
-            break;
-        }
-    }
+// int main(){
+//     int n;
+//     printf("enter number : ");
+//     scanf("%d",&n);
+//     int sum;
+//     for (int i = 1 ; i < n ; i++){
+//         sum += n % 10;
+//         printf("%d",sum);
+//         if (n<10){
+//             break;
+//         }
+//     }
 
-}
+// }
