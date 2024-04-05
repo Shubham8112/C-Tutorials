@@ -272,3 +272,33 @@
 //     }
 
 // }
+int main(){
+    int n ; 
+    scanf("%d",&n);
+    int m[n][n];
+    for (int i = 0 ; i< n ; i++){
+        scanf("%d",&m[n][n]);
+    }
+    int sum = 0,sum2 = 0,sum3 = 0;
+    for (int i = 0 ; i< n;i++){
+        sum += m[i][0];
+    }
+    for (int i = 0 ; i< n;i++){
+        for (int j = 0 ; j < n;j++){
+            sum2 += m[0][j];
+        }
+    }
+    for (int i = 0 ; i< 1 ;i++){
+        for (int j = 0;j < n;j++){
+            int k = i;
+            sum3 += m[k][j];
+            k++;
+        }
+    }
+    if ( sum2 = sum3){
+        printf("magic matrix");
+    }else{
+        printf("not magic matrix");
+    }
+    
+}

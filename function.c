@@ -294,21 +294,173 @@
 //     printf("fib of %d is : %d \n ", n , fibN);
 //     return fibN;
 // }
-void even(int *a ,int *b){
-    for(int i = *a ; i<=*b;i++){
-        if (i % 2 == 0){
-            printf("%d",i);
-        }
-        else{
-            printf("\n");
-        }
-    }
+// #include <stdio.h>
+    
+// int max() {
+//     return 1;
+// }
+// int main() {
+//     int i = 0;
+//     for (max(); i == 1; i = 2)
+//         printf("L ");
+//     printf("AL");
+// }
+#include <stdio.h>
 
-}
+// Function to check if a number has exactly 9 factors
+// int check_9_factors(int num) {
+//     int count = 0;
+//     for (int i = 1; i * i <= num; ++i) {
+//         if (num % i == 0) {
+//             if (num / i == i) {
+//                 count++;
+//             } else {
+//                 count += 2;
+//             }
+//         }
+//     }
+//     return count;
+// }
+
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+
+//     int count = 0;
+//     for (int i = 1; i <= N; ++i) {
+//         if (check_9_factors(i) == 9) {
+//             printf("%d ", i);
+//             count++;
+//         }
+//     }
+//     printf("\n%d", count);
+
+//     return 0;
+// }
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     int count = 0;
+//     for (int i = 1 ; i <= n ;i++){
+//         if(n % i == 0){
+//             printf("%d ",i);
+//             count++;
+//         }
+//     }
+//     if (count >= 9){
+//         printf("\nyes it divisble by %d divisor ",count);
+//     }else{
+//         printf("\nnot divisible more or equal to 9 divisor");
+//     }
+    
+// }
+// write a program to find smallest number
+// int a,b,c;
+// int main(){
+//     auto int a,b,c;
+//     scanf("%d %d %d",&a,&b,&c);
+//     if (a < b && a<c){
+//         printf("%d",a);
+//     }
+//     else if(b < a && b < c){
+//         printf("%d",b);
+//     }
+//     else{
+//         printf("%d",c);
+//     }
+// }
+// You are using GCC
+#include <stdio.h>
+
+// void recursiveFunc(int n, int m) {
+//     if (n >= 0) {
+//         printf("Before call(%d): %d\n", n, m);
+//         recursiveFunc(n - 1, m);
+//         printf("After return(%d): %d\n", n, m);
+//     }
+// }
+
+// int main() {
+//     int n;
+//     // printf("Enter an integer n: ");
+//     scanf("%d", &n);
+//     auto m = 3; // Initialize m to 3
+//     recursiveFunc(n, m);
+//     return 0;
+// }
+#include<math.h>
+// int main(){
+//     int w;
+//     float h;
+//     scanf("%d",&w);
+//     scanf("%f",&h);
+//     // float k = h * h;
+//     float bmi = w / pow(h , 2);
+//     if (bmi < 18.5 ){
+//         printf("U");
+//     }
+//     else if(18.5 <= bmi || bmi <= 25.0){
+//         printf("N");
+//     }
+//     else if( 25.0 < bmi || bmi <= 30.0){
+//         printf("H");
+//     }
+//     else if(bmi>30.0){
+//         printf("O");
+//     }
+//     else{
+//         printf("\n");
+//     }
+// }
+// #include<stdio.h>
+// int main(){
+//     int m[8];
+//     for (int i= 0 ; i < 8 ; i++){
+//         scanf("%d",&m[i]);
+//     }
+//     for (int i = 0 ; i < 8 ; i++){
+//         printf("%d ",m[i]);
+//     }
+// }
+
+// int main(){
+//     int n ; 
+//     scanf("%d",&n);
+//     int m[n][n];
+//     for (int i = 0 ; i< n ; i++){
+//         for (int j = 0 ; j < n ; j++){
+//              scanf("%d",&m[i][j]);
+//         }
+       
+//     }
+//     for (int i = 0 ; i< n ; i++){
+//         for (int j = 0 ; j < n ; j++){
+//              printf("%d ",m[i][j]);
+//         }
+//      printf("\n");
+//     }
+//     int sum = 0,sum2 = 0,sum3 = 0;
+//     for (int i = 0 ; i< n ;i++){
+//         sum += m[0][i];
+//     }
+//     for (int i = 0 ; i< n ;i++){
+//             sum2 += m[i][0];
+//     }
+//     for (int i = 0 ; i< n ; i++){
+//         sum3 += m[i][i];
+//     }
+//     if ( sum == sum2 && sum2 == sum3){
+//         printf("The given matrix is a magic square matrix");
+//     }else{
+//         printf("The given matrix is not magic square matrix");
+//     }
+// }
 int main(){
-    int a , b;
-    scanf("%d %d",&a,&b);
-    even(&a,&b);
+int a;
+float b;
+printf("enter first number: ");
+scanf("%d %f",&a ,&b);
 
-
+float sum = a + b;
+printf("%.2f",sum);
 }
