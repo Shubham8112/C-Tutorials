@@ -455,12 +455,69 @@
 //         printf("The given matrix is not magic square matrix");
 //     }
 // }
-int main(){
-int a;
-float b;
-printf("enter first number: ");
-scanf("%d %f",&a ,&b);
 
-float sum = a + b;
-printf("%.2f",sum);
+// #include<math.h>
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for(int i = 0 ; i < n ; i++){
+//         scanf("%d",&arr[i]);
+//     }
+
+//     for(int i=0; i<n)
+ 
+// }
+
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+// int main() {
+//     int n, count = 0;
+
+//     printf("Enter the size of the array: ");
+//     scanf("%d", &n);
+//     int arr[n];
+
+//     printf("Enter %d elements: ", n);
+//     for (int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+
+//     for(int i=0; i<n; i++){
+//          int sqrtNum = sqrt(arr[i]);
+
+//         if (sqrtNum * sqrtNum == arr[i]) {
+//             count++;
+//             printf("%d ",arr[i]);
+//         }
+//     }
+
+//     printf("\nCount of perfect square elements: %d\n", count);
+
+//     return 0;
+// }
+
+
+// You are using GCC
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int m[n];
+    for (int i = 0 ; i < n ; i++){
+        scanf("%d",&m[i]);
+    }
+    int k;
+    scanf("%d",&k);
+    for(int i = 0 ; i < n ; i++){
+        if(m[i] == k){
+        printf("The target value %d is present at index %d",k,i);
+        }else{
+            printf("the target value %d is not present in the array");
+        }
+    }
 }

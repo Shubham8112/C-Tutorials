@@ -79,23 +79,43 @@
 //    return count;
 // }
 
-#include<stdio.h>
+// #include<stdio.h>
+
+// int main(){
+//     int n, h;
+//     scanf("%d", &n);
+//     float temperature[n];
+    
+//     // Input temperatures for each day
+//     for (int i = 0; i < n; i++){
+//         scanf("%f", &temperature[i]);
+//     }
+    
+//     scanf("%d", &h);
+    
+//     // Adjust index by h-1 since array index starts from 0
+//     printf("%.2f", temperature[h - 1]);
+    
+//     return 0;
+// }
 
 int main(){
-    int n, h;
-    scanf("%d", &n);
-    float temperature[n];
-    
-    // Input temperatures for each day
-    for (int i = 0; i < n; i++){
-        scanf("%f", &temperature[i]);
-    }
-    
-    scanf("%d", &h);
-    
-    // Adjust index by h-1 since array index starts from 0
-    printf("%.2f", temperature[h - 1]);
-    
-    return 0;
-}
 
+    int n,items;
+    printf("enter the size of array : ");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the element of array : ");
+    for(int i = 0 ; i < 3 ; i++){
+        scanf("%d",&arr[i]);
+    }
+    items = 1;
+    n++;
+    for(int i  = n ; i > 5; i--){
+        arr[i - 1] = arr[i-2];
+    }
+    arr[0] = items;
+    for(int i = 0 ; i < n ; i++)
+        printf("%d\t",arr[i]);
+    
+}    
