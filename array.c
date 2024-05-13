@@ -99,23 +99,169 @@
 //     return 0;
 // }
 
-int main(){
+// int main(){
 
-    int n,items;
-    printf("enter the size of array : ");
+//     int n,items;
+//     printf("enter the size of array : ");
+//     scanf("%d",&n);
+//     int arr[n];
+//     printf("Enter the element of array : ");
+//     for(int i = 0 ; i < 3 ; i++){
+//         scanf("%d",&arr[i]);
+//     }
+//     items = 1;
+//     n++;
+//     for(int i  = n ; i > 5; i--){
+//         arr[i - 1] = arr[i-2];
+//     }
+//     arr[0] = items;
+//     for(int i = 0 ; i < n ; i++)
+//         printf("%d\t",arr[i]);
+    
+// }    
+
+#include <stdio.h>
+
+// void test(int arr[], int size, int dl) {
+//     for (int i = dl; i < size - 1; i++) {
+//         arr[i] = arr[i + 1];
+//     }
+//     size--;
+// }
+
+// int main() {
+//     int arr[] = {10, 25, 3, 8, 12, 15, 5};
+//     int size = sizeof(arr) / sizeof(arr[0]);
+//     int del = 3; 
+
+//     test(arr, size, del);
+
+//     for (int i = 0; i < size - 1; i++) {
+//         printf("%d ", arr[i]);
+//     }
+
+//     return 0;
+// }
+// int main(){
+//     int k[] = {5,8,6,3};
+//     int N = sizeof(k)/sizeof(k[0]);
+//     printf("%d\n",N);
+//     N = sizeof(k[0]);
+//     printf("%d",N);
+
+// }
+// practice bubblesort
+// void printarray(int *arr,int n){
+//     printf("before sorting : ");
+//     for(int i = 0 ; i < n ;i++ ){
+//         printf("%d ",arr[i]);
+//     }
+//     printf("\n");
+// }
+// int sorting(int *arr , int n){
+//     int isSorted = 0;
+//     int temp = 0;
+//     for(int i = 0 ; i < n-1 ; i++){
+//          isSorted = 1;
+//         for(int j = 0; j < n-1-i ; j++){
+//             if(arr[j] > arr[j+1]){
+//                 temp = arr[j+1];
+//                 arr[j+1] = arr[j];
+//                 arr[j]= temp;
+//                 isSorted = 0; 
+//             }
+//         }
+//         if(isSorted){
+//             return 0;
+//         }
+//     }
+// }
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for(int i = 0 ; i < n ; i++){
+//         scanf("%d",&arr[i]);
+//     }
+//     printarray(arr,n);
+//     sorting(arr,n);
+//     printarray(arr,n);
+// }
+// int searching(int *arr,int n,int e);
+// int main(){
+//     int n,element;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for(int i = 0 ; i < n ; i++){
+//         scanf("%d",&arr[i]);
+//     }
+//     printf("Enter seaching element");
+//     scanf("%d",&element);
+//     int found = searching(arr,n,element);
+//     printf("the element %d found in index %d",element,found);
+
+// }
+// int searching(int *arr,int n , int e){
+//     for(int i = 0 ; i < n ; i++){
+//         if(arr[i] == e){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+// practice problem
+// int main(){
+//     int n ; 
+//     scanf("%d",&n);
+//     int arr[n];
+//     for(int i = 0 ; i < n ; i++){
+//         scanf("%d",&arr[i]);
+//     }
+//     for(int i = 0 ; i < n ; i++){
+//         if(arr[i] != i){
+//             printf("%d ",arr[i]);
+//         }
+//     }
+// }
+#include<stdlib.h>
+// int main(){
+//     int *ptr ;
+//     ptr =(int*) calloc(50 , sizeof(int));
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for(int i = 0 ; i < n ; i++){
+//         scanf("%d",&arr[i]);
+//     }
+//     int smallest = -1;
+//     for(int i = 0 ; i < n ; i++){
+//         if(arr[i] % 2 == 0 && (smallest == -1 || arr[i] < smallest)){
+//             smallest = arr[i];
+//         }
+//     }
+//     printf("%d",smallest);
+//     return 0;
+        
+// }
+int main(){
+    int n;
     scanf("%d",&n);
     int arr[n];
-    printf("Enter the element of array : ");
-    for(int i = 0 ; i < 3 ; i++){
+    for(int i = 0 ; i < n ; i++){
         scanf("%d",&arr[i]);
     }
-    items = 1;
+    int e,new;
+    scanf("%d %d",&e,&new);
+    int found = 0;
     n++;
-    for(int i  = n ; i > 5; i--){
-        arr[i - 1] = arr[i-2];
+    for(int i = 0 ; i < n ; i++){
+        if(arr[i] == e){
+            found = i;
+        }
     }
-    arr[0] = items;
-    for(int i = 0 ; i < n ; i++)
-        printf("%d\t",arr[i]);
-    
-}    
+    arr[found] = new;
+    for(int i = 0 ; i < found ; i++){
+        printf("%d",&arr[i]);
+    }
+
+}
